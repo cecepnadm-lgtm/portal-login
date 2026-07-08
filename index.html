@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Portal CEC-EPN</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f1f1f1;
+    text-align:center;
+}
+
+header{
+    background:white;
+    padding:20px;
+    border-bottom:1px solid #0a2b52;
+}
+
+.logo{
+    color:#ef233c;
+    font-size:55px;
+}
+
+.container{
+    margin-top:70px;
+}
+
+.portal{
+    font-size:55px;
+    color:#0a2b52;
+}
+
+.portal span{
+    color:#ef233c;
+    display:block;
+    letter-spacing:10px;
+    font-size:18px;
+}
+
+input, select{
+    width:430px;
+    padding:18px;
+    margin:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+    text-align:center;
+}
+
+button{
+    background:#062f52;
+    color:white;
+    border:none;
+    padding:18px 50px;
+    margin-top:20px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0c467a;
+}
+
+.footer{
+    margin-top:60px;
+    background:#062f52;
+    color:white;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">cec•epn</div>
+</header>
+
+<div class="container">
+
+<div class="portal">
+PORTAL
+<span>EN LÍNEA</span>
+</div>
+
+<form onsubmit="login(event)">
+
+<input type="text" placeholder="CÉDULA/RUC O PASAPORTE" required>
+<br>
+
+<input type="password" placeholder="CONTRASEÑA" required>
+<br>
+
+<select>
+<option>ESTUDIANTE</option>
+<option>DOCENTE</option>
+<option>ADMINISTRATIVO</option>
+</select>
+
+<br>
+
+<button type="submit">INICIAR SESIÓN</button>
+
+</form>
+
+</div>
+
+<div class="footer">
+© 2026 CEC-EPN
+</div>
+
+<script>
+
+function login(event){
+event.preventDefault();
+window.location.href="portal.html";
+}
+
+</script>
+
+</body>
+</html>
